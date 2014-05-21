@@ -36,11 +36,11 @@ Pre-execution requirements:
         File description: Contain the activity ID for the (4.7) file. See also (4.2)     
 
 (5) Set you work directory (setwd()) to the same folder you extracted the zip file      
-(6) Install the packages sqldf, reshape and reshape2 prior to code execution    
+(6) Install the packages sqldf, reshape and reshape2 prior to code execution        
 
-Execution flow: 
-1.	Row bind files (4.4) & (4.7) (date frame: Xall) 
-2.	Update the column headers of the data frame from step 1 with the values from file  (4.1)        
+Execution flow:  
+1.	Row bind files (4.4) & (4.7) (date frame: Xall)  
+2.	Update the column headers of the data frame from step 1 with the values from file  (4.1)            
 3.	Create another data frame, from the data frame in step1 & 2, only with columns that have mean() and std() 
 4.	calculations (date frame: Xall_mean_std)        
 4.	Row bind files (4.5) & (4.8) (data frame: AllActivity)  

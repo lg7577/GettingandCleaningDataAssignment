@@ -52,7 +52,7 @@ Instructions for executing the run_analysis.R file
     frame: Xall_mean_std_act_desc_SubjectID)        
 9.	Melt the data frame from the previous step (data frame: xAllmelt)       
 10.	Calculate average and group the averages by Subject ID and Activity Description (**Final data frame: xAlldata**)    
-11.	Write the data frame from the last step to a txt file (final_assignment_tidy_data.txt)  
+11.	**Write the data frame from the last step to a txt file (final_assignment_tidy_data.txt)**  
 
 The file from step 11 was pushed to github under the link: https://github.com/lg7577/GettingandCleaningDataAssignment   
 

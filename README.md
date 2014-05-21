@@ -9,29 +9,29 @@ Instructions for executing the run_analysis.R file
 
 ### Pre-execution requirements:
 
-(1) The data for the project is in: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip       
-(2) Extract the data to your local machine            
-(3) Ensure that you have UCI HAR Dataset folder with two additional sub folders (test and train) where the data was      
+1. The data for the project is in: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip       
+2. Extract the data to your local machine            
+3. Ensure that you have UCI HAR Dataset folder with two additional sub folders (test and train) where the data was      
     extracted          
-(4) Check for the availability of the following files:    
-(4.1) **.//features.txt**      
+4. Check for the availability of the following files:    
+4.1 **.//features.txt**      
    	  File description: Include column headers (561 columns) for all measurements. The measurements are in files (4.4)          and (4.7)              
-(4.2) **.//activity_labels.txt**        
+4.2 **.//activity_labels.txt**        
       File description: Reference Data to label the activities in each rows of the files mentioned in files (4.4) and 
       (4.7) as: 1. LAYING 2. SITTING 3. STANDING 4.WALKING 5. WALKING_DOWNSTAIRS and 6. WALKING_UPSTAIRS
-(4.3) **.//test//subject_test.txt** 
+4.3 **.//test//subject_test.txt** 
       File description: Contain the ID of the volunteers who performed the measurements for each of the rows in the 
       X_train file (4.4)      
-(4.4) **.//test//X_test.txt**       
+4.4 **.//test//X_test.txt**       
       File description: Contain measurements for 30% of the population        
-(4.5) **.//test//Y_test.txt**       
+4.5 **.//test//Y_test.txt**       
       File description: Contain the activity ID for the (4.4) file. See also (4.2)     
-(4.6) **.//train//subject_train.txt**       
+4.6 **.//train//subject_train.txt**       
       File description: Contain the ID of the volunteers who performed the measurements for each of the rows in the 
       X_train file (4.7)      
-(4.7) **.//train//X_train.txt**     
+4.7 **.//train//X_train.txt**     
       File description: Contain measurements for 70% of the population        
-(4.8) **.//train//Y_train.txt**     
+4.8 **.//train//Y_train.txt**     
       File description: Contain the activity ID for the (4.7) file. See also (4.2)     
 
 (5) Set you work directory (setwd()) to the same folder you extracted the zip file      

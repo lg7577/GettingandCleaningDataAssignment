@@ -1,4 +1,4 @@
-#Set the local work directory
+#Set the work directory
 
 #setwd("C:\\Personal\\Coursera\\Getting and cleaning data\\UCI HAR Dataset")
 
@@ -38,6 +38,7 @@ Xall_mean_std <- Xall[,grep("*-mean()*|*-std()*", colnames(Xall))]
 #corrrspond to the data frame (Xall_mean_std) with all the measurements. 
 #ensure meaningful column name and merge it with the Xall_mean_std data frame.
 
+#require(sqldf)
 AllActivity <- rbind(Ytest, Ytrain)
 AllActivity_Desc <- sqldf("select AA.V1, AL.V2 from AllActivity AA, ActivityLabels AL where AA.V1 = AL.V1")
 names(AllActivity_Desc) <- c("Activity_ID", "Activity_Desc")
@@ -56,6 +57,8 @@ colnames(Xall_mean_std_act_desc_SubjectID)[81] <- "Subject_ID"
 #Create the 2nd tidy data set to show the average of all mean() and std() columns group
 #by activity description and subject ID.Write the tidy data set to a file.
 
+#require(reshape)
+#require(reshape2)
 var_name <- colnames(Xall_mean_std_act_desc_SubjectID[,1:79])
 xAllmelt <- melt(Xall_mean_std_act_desc_SubjectID,id=c("Activity_Desc","Subject_ID"),measure.vars=var_name)
 xAlldata <- dcast(xAllmelt, Subject_ID + Activity_Desc ~ variable, mean)

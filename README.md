@@ -1,13 +1,13 @@
-### Subject: Getting and Cleaning Data - Final assignment
+## Subject: Getting and Cleaning Data - Final assignment
 
 Instructions for executing the run_analysis.R file
 
-General info:
+### General info:
 *	Date created: May 20th 2014
 *	Author: Lior Ginzberg
 *	Date last updated: May 21th 2014
 
-Pre-execution requirements:
+### Pre-execution requirements:
 
 (1) The data for the project is in: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip       
 (2) Extract the data to your local machine            
@@ -38,7 +38,7 @@ Pre-execution requirements:
 (5) Set you work directory (setwd()) to the same folder you extracted the zip file      
 (6) Install the packages sqldf, reshape and reshape2 prior to code execution        
 
-Execution flow:
+### Execution flow:
 
 1.	Row bind files (4.4) & (4.7) (date frame: Xall)  
 2.	Update the column headers of the data frame from step 1 with the values from file  (4.1)            

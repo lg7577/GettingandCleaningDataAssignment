@@ -38,7 +38,8 @@ Pre-execution requirements:
 (5) Set you work directory (setwd()) to the same folder you extracted the zip file      
 (6) Install the packages sqldf, reshape and reshape2 prior to code execution        
 
-Execution flow:  
+Execution flow:
+
 1.	Row bind files (4.4) & (4.7) (date frame: Xall)  
 2.	Update the column headers of the data frame from step 1 with the values from file  (4.1)            
 3.	Create another data frame, from the data frame in step1 & 2, only with columns that have mean() and std() 
@@ -46,8 +47,8 @@ Execution flow:
 4.	Row bind files (4.5) & (4.8) (data frame: AllActivity)  
 5.	Join the data frame from the previous step with the file from (4.2) to add column header and activity description 
 6.	(data frame: AllActivity_Desc)  
-6.	Join the data frame from the previous step with the data frame from step 3 (data frame: Xall_mean_std_act_desc) 
-7.	Row bind files (4.3) & (4.6) (data frame: AllSubjects)  
+6.	Join the data frame from the previous step with the data frame from step 3 (data frame: Xall_mean_std_act_desc)  
+7.	Row bind files (4.3) & (4.6) (data frame: AllSubjects)    
 8.	Join the data frame from the step 6 with the data frame from step 7 to add column header and subject ID (data 
 9.	frame: Xall_mean_std_act_desc_SubjectID)        
 9.	Melt the data frame from the previous step (data frame: xAllmelt)       

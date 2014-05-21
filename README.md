@@ -17,7 +17,7 @@ Instructions for executing the run_analysis.R file
 4.1 **.//features.txt**      
    	  File description: Include column headers (561 columns) for all measurements. The measurements are in files (4.4)          and (4.7)              
 4.2 **.//activity_labels.txt**        
-      File description: Reference Data to label the activities in each rows of the files mentioned in files (4.4) and 
+      _File description_: Reference Data to label the activities in each rows of the files mentioned in files (4.4) and 
       (4.7) as: 1. LAYING 2. SITTING 3. STANDING 4.WALKING 5. WALKING_DOWNSTAIRS and 6. WALKING_UPSTAIRS
 4.3 **.//test//subject_test.txt** 
       File description: Contain the ID of the volunteers who performed the measurements for each of the rows in the 
@@ -34,8 +34,8 @@ Instructions for executing the run_analysis.R file
 4.8 **.//train//Y_train.txt**     
       File description: Contain the activity ID for the (4.7) file. See also (4.2)     
 
-(5) Set you work directory (setwd()) to the same folder you extracted the zip file      
-(6) Install the packages sqldf, reshape and reshape2 prior to code execution        
+5. Set you work directory (setwd()) to the same folder you extracted the zip file      
+5. Install the packages sqldf, reshape and reshape2 prior to code execution        
 
 ### Execution flow:
 
